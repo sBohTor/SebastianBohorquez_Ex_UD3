@@ -3,6 +3,10 @@ import java.awt.event.KeyEvent;
 
 
 
+/**
+ * 
+ * @author Sebastian
+ */
 public class añadePartido extends javax.swing.JFrame
 {
    
@@ -15,7 +19,9 @@ public class añadePartido extends javax.swing.JFrame
         initComponents();
     }
 
-   
+   /**
+    * @param ventana abre una nueva ventana para añadir un partido
+    */
     public añadePartido(Apuesta ventana) 
     {
         initComponents();
@@ -69,7 +75,9 @@ public class añadePartido extends javax.swing.JFrame
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+     * @param p recibe por parametro un string 
+     */
     public void agregarPartido(String p)
     {
         v.agregarPartido(p);
@@ -88,7 +96,9 @@ public class añadePartido extends javax.swing.JFrame
         }
     }//GEN-LAST:event_tPartidoKeyPressed
 
-    
+    /**
+     * @param args 
+     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
