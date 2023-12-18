@@ -128,7 +128,7 @@ public class Apuesta extends javax.swing.JFrame {
      * @param evt 
      */
     private void bNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNuevoActionPerformed
-        añadePartido partidoNuevo = new añadePartido(this);
+        CrearPartido partidoNuevo = new CrearPartido(this);
         partidoNuevo.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         partidoNuevo.setSize(400, 75);
         partidoNuevo.setResizable(Boolean.FALSE);

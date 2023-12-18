@@ -7,14 +7,14 @@ import java.awt.event.KeyEvent;
  * 
  * @author Sebastian
  */
-public class añadePartido extends javax.swing.JFrame
+public class CrearPartido extends javax.swing.JFrame
 {
    
     
     private Apuesta v;
     
    
-    public añadePartido() 
+    public CrearPartido() 
     {
         initComponents();
     }
@@ -22,7 +22,7 @@ public class añadePartido extends javax.swing.JFrame
    /**
     * @param ventana abre una nueva ventana para añadir un partido
     */
-    public añadePartido(Apuesta ventana) 
+    public CrearPartido(Apuesta ventana) 
     {
         initComponents();
         v = ventana;
@@ -78,7 +78,7 @@ public class añadePartido extends javax.swing.JFrame
     /**
      * @param p recibe por parametro un string 
      */
-    public void agregarPartido(String p)
+    public void añadePartido(String p)
     {
         v.agregarPartido(p);
         tPartido.setText("");
@@ -86,13 +86,13 @@ public class añadePartido extends javax.swing.JFrame
     }
     
     private void bAgregarPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAgregarPartidoActionPerformed
-        agregarPartido(tPartido.getText());
+        añadePartido(tPartido.getText());
     }//GEN-LAST:event_bAgregarPartidoActionPerformed
 
     private void tPartidoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tPartidoKeyPressed
         if( evt.getKeyCode() == KeyEvent.VK_ENTER )
         {
-            agregarPartido(tPartido.getText());
+            añadePartido(tPartido.getText());
         }
     }//GEN-LAST:event_tPartidoKeyPressed
 
@@ -113,14 +113,18 @@ public class añadePartido extends javax.swing.JFrame
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(añadePartido.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CrearPartido.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(añadePartido.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CrearPartido.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(añadePartido.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CrearPartido.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(añadePartido.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CrearPartido.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -129,7 +133,7 @@ public class añadePartido extends javax.swing.JFrame
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new añadePartido().setVisible(true);
+                new CrearPartido().setVisible(true);
             }
         });
     }
